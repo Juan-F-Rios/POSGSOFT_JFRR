@@ -3,6 +3,6 @@
 int main()
 {
     View view;
-    view.mostrarMenuUsuario();
+    view.mostrarMenuCargoUsuario();
     return 0;
 }

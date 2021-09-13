@@ -1,10 +1,9 @@
 #include "View.h"
 
 View::View()
-{
-}
+{}
 
-void View::cargoUsuario()
+void View::mostrarMenuCargoUsuario()
 {
     int opcion = -1
     do
