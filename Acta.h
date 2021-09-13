@@ -12,6 +12,8 @@ using std::string;
 class Acta
 {
 private:
+    int numeroActa;
+    string fecha;
     string autor;
     string nombreTrabajo;
     string tipoTrabajo;
@@ -21,7 +23,7 @@ private:
 
 public:
     Acta();
-    Acta(string autor,string nombreTrabajo, string director, string jurado1, string jurado2);
+    Acta(string autor,string nombreTrabajo, string tipoTrabajo, string director, string jurado1, string jurado2, string fecha, string numeroActa);
     string getAutor();
     void setAutor(string autor);
     string getnombreTrabajo();
@@ -34,6 +36,13 @@ public:
     void setJurado1(string jurado1);
     string getJurado2();
     void setJurado2(string jurado2);
+    int getNumActa();
+    void setNumActa(int numeroActa);
+    string getFecha();
+    void setFecha(string fecha);
+    mostrarActa();
+    crearActa();
+
     
 };
 

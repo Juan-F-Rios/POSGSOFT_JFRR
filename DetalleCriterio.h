@@ -10,7 +10,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-Class DetalleCriterio()
+class DetalleCriterio()
 {
 private:
     int id;
@@ -23,7 +23,8 @@ public:
     string getTexto();
     void setTexto(string texto);
     int getPorcentaje();
-    void setOorcentaje(int porcentaje);
+    void setPorcentaje(int porcentaje);
+    void mostrarDetalleCriterio();
 
 };
 #endif

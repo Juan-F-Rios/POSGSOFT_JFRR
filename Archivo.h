@@ -1,9 +1,9 @@
-#ifndef TIENDA_H
-//Guardas
-#define TIENDA_H
+#ifndef ARCHIVO_H
+#define ARCHIVO_H
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
 #include <map>
 #include <vector>
 #include <iterator>
@@ -12,16 +12,21 @@
 
 using std::cin;
 using std::cout;
+using std::string;
 using std::getline;
 using std::iterator;
-using std::map;
-using std::string;
 using std::vector;
 
-Class::Archivo()
+class Archivo
 {
 private:
+    string nombre; 
+    int numActa;
+    vector<Acta>actas;
 
 public:
+    Archivo();
+    void crearActa();
+    void mostrarActas();
 };
 #endif
