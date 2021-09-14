@@ -4,9 +4,8 @@
 Acta::Acta()
 {}
 
-Acta::Acta(string autor,string nombreTrabajo, string tipoTrabajo, string director, string jurado1, string jurado2, string fecha, string numeroActa)
+Acta::Acta(string autor,string nombreTrabajo, string tipoTrabajo, string director, string jurado1, string jurado2, string fecha, int numActa)
 {
-	this->numeroActa = numeroActa;
 	this->fecha = fecha;
     this-> autor = autor;
     this-> nombreTrabajo = nombreTrabajo;
@@ -14,6 +13,7 @@ Acta::Acta(string autor,string nombreTrabajo, string tipoTrabajo, string directo
     this-> director = director;
     this-> jurado1 = jurado1;
     this-> jurado2 = jurado2;
+	this-> numActa = numActa;
 
 }
 
