@@ -3,28 +3,26 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include "Criterio.h"
+#include "DetalleCriterio.h"
 
 using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
 
-class DetalleCriterio()
+class DetalleCriterio
 {
 private:
-    int id;
-    string texto;
-    int porcentaje;
+    float nota;
+    float valorPorcentual;
 
 public:
-    int getId();
-    void setId(int id);
-    string getTexto();
-    void setTexto(string texto);
-    int getPorcentaje();
-    void setPorcentaje(int porcentaje);
+    Acta getActa();
+    int getNota();
+    void setNota(float nota);
+    int getValorPorcentual();
+    void setValorPorcentual(float valorPorcentual);
+    void mostrarCriterioActa();
     void mostrarDetalleCriterio();
-
 };
 #endif

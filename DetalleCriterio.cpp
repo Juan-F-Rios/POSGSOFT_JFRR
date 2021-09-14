@@ -1,50 +1,47 @@
 #include <iostream>
-#include "DetalleCriterio.h"
+#include "Criterio.h"
 
 
 DetalleCriterio::DetalleCriterio()
-{}
-
-DetalleCriterio::DetalleCriterio(int id, string texto, int porcentaje)
 {
-    this->id = id;
-    this->texto = texto;
-    this->porcentaje = porcentaje;   
-}
-
-int DetalleCriterio::getId()
-{
-    return id;
-}
-
-void DetalleCriterio::setId(int id)
-{
-    this->id = id;
-}
-
-string DetalleCriterio::getTexto()
-{
-    return texto;
-}
-
-void DetalleCriterio::setTexto(string texto)
-{
-    this->texto = texto;
-}
-
-int DetalleCriterio::getPorcentaje()
-{
-    return porcentaje;
-}
-
-void DetalleCriterio::setPorcentaje(int porcentaje)
-{
-    this->porcentaje = porcentaje;
+    this->nota = nota;
+    this->valorPorcentual = valorPorcentual;
 }
 
 void DetalleCriterio::mostrarDetalleCriterio()
 {
-    cout << "id " << this->id;
-    cout << "texto " << this->texto;
-    cout << "porcentaje " << this->porcentaje;
+    cout << "La nota es: " << this->nota;
+    cout << "El valor porcentual es: " << this->valorPorcentual;
 }
+
+void DetalleCriterio::mostrarCriterioActa()
+{
+    cout << acta.getActa() << "\t" << nota << "\t" << valorPorcentual << "\n";
+}
+
+Acta DetalleCriterio::getActa()
+{
+    return this->acta;
+}
+
+float DetalleCriterio::getNota()
+{
+    return nota;
+}
+
+void DetalleCriterio::setNota(float nota)
+{
+    this->nota = nota;
+}
+
+float DetalleCriterio::getValorPorcentual()
+{
+    return valorPorcentual;
+}
+
+void DetalleCriterio::setValorPorcentual(float valorPorcentual)
+{
+    this->valorPorcentual = valorPorcentual;
+}
+
+
