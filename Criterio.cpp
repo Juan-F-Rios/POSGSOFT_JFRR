@@ -1,74 +1,55 @@
 #include <iostream>
 #include "Criterio.h"
 
+
 Criterio::Criterio()
+{}
+
+Criterio::Criterio(int id, string texto, int porcentaje)
 {
-    int this->numCriterio = 1;
+    this->id = id;
+    this->texto = texto;
+    this->porcentaje = porcentaje;   
 }
 
-void Criterio::crearCriterio()
-{
-    string texto;
-    int porcentaje;
-    cout << "Ingrese la descripcion del criterio: ";
-    getline(cin, texto);
-    cout << "Ingrese el valor porcentual del criterio: ";
-    cin >> porcentaje;
-
-    DetalleCriterio detalleCriterio;
-    detalleCriterio.setId(this->numCriterio ++);
-    detalleCriterio.setTexto(texto);
-    detalleCriterio.setPorcentaje(porcentaje);
-
-    listaCriterios[numCriterio] = detalleCriterio;
+void Criterio::agregarDetalleCriterio(DetalleCriterio detalle)
+{//crear vector detalles
+    detalles.push_back(detalle)
 }
 
-float Criterio::evaluarCriterio()
+int Criterio::getId()
 {
-    float nota;
-    float valorPorcentual;
-    cout << "Ingrese la nota del criterio: ";
-    cin >> nota;
-    valorPorcentual = (this->porcentaje/100)*nota;
-    return valorPorcentual;
+    return id;
+}
+
+void Criterio::setId(int id)
+{
+    this->id = id;
+}
+
+string Criterio::getTexto()
+{
+    return texto;
+}
+
+void Criterio::setTexto(string texto)
+{
+    this->texto = texto;
+}
+
+int Criterio::getPorcentaje()
+{
+    return porcentaje;
+}
+
+void Criterio::setPorcentaje(int porcentaje)
+{
+    this->porcentaje = porcentaje;
 }
 
 void Criterio::mostrarCriterio()
 {
-    for (map<int, DetalleCriterio>::iterator pCriterio = listaCriterios.begin();
-		 pCriterio != listaCriterios.end(); pCriterio++)
-	    {
-		    DetalleCriterio valor = pCriterio->second;
-		    valor.mostrarDetalleCriterio();
-        }
-}
-
-void Criterio::modificarCriterio()
-{
-    //hallar la manera de elegir el criterio(importando apuntador)
-    string texto;
-    int porcentaje;
-    cout << "Ingrese la nueva descripcion del criterio: ";
-    getline(cin, texto);
-    cout << "Ingrese el nuevo valor porcentual del criterio: ";
-    cin >> porcentaje;
-
-    DetalleCriterio detalleCriterio;
-    detalleCriterio.setTexto(texto);
-    detalleCriterio.setPorcentaje(porcentaje);
-
-}
-
-void Criterio::modificarTextoCriterio()
-{
-    string texto;
-    cout << "Ingrese la nueva descripcion del criterio: ";
-    getline(cin, texto);
-}
-
-void Criterio::modificarPorcentajeCriterio()
-{
-    int porcentaje;
-    cout << "Ingrese el nuevo valor porcentual: "
-    cin >> porcentaje;
+    cout << "id " << this->id;
+    cout << "texto " << this->texto;
+    cout << "porcentaje " << this->porcentaje;
 }

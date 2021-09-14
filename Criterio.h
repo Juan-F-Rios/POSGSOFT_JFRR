@@ -3,32 +3,29 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include "DetalleCriterio.h"
+#include "Criterio.h"
 
 using std::cin;
 using std::cout;
-using std::getline;
 using std::endl;
 using std::string;
-using std::iterator;
-using std::map;
 
 class Criterio
 {
 private:
-    int numCriterio;
-    int nota;
-    map<int, DetalleCriterio> listaCriterios;
-public:
-    Criterio();
-    void crearCriterio();
-    void mostrarCriterio();
-    float evaluarCriterio();
-    void modificarCriterio();
-    void modificarTextoCriterio();
-    void modificarPorcentajeCriterio();
-    
+    int id;
+    string texto;
+    int porcentaje;
 
+public:
+    int getId();
+    void setId(int id);
+    string getTexto();
+    void setTexto(string texto);
+    int getPorcentaje();
+    void setPorcentaje(int porcentaje);
+    void mostrarCriterio();
+    void agregarDetalleCriterio();
 
 };
 #endif
