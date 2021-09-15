@@ -5,29 +5,29 @@ View::View()
 
 void View::mostrarMenuCargoUsuario()
 {
-    int opcion = -1
+    int opcion = -1;
     do
     {
-        cout << "Menu usuarios\n";
-        cout << "1. Asistente posgrado? \n";
+        cout << "\nMenu usuarios\n";
+        cout << "1. Asistente posgrado \n";
         cout << "2. Jurado \n";
-        cout << "3. Directora \n"
-        cout << "0. Salir \n"
+        cout << "3. Directora \n";
+        cout << "0. Salir \n";
         std::cout << "Digita el numero: ";
         std::cin >> opcion;
 
         switch (opcion)
         {
             case 1:
-            posgradosIngSoft.mostrarMenuAsistente();
+            mostrarMenuAsistente();
             break;
 
             case 2:
-            posgradosIngSoft.mostrarMenuJurado();
+            mostrarMenuJurado();
             break;
 
             case 3:
-            posgradosIngSoft.mostrarMenuDirectora();
+            mostrarMenuDirectora();
             break;
 
         }
@@ -41,10 +41,10 @@ void View::mostrarMenuAsistente()
     do
     {
 
-        cout << "Menu actas asistente\n";
+        cout << "\nMenu actas asistente\n";
         cout << "1. Crear acta \n";
         cout << "2. Ver historicos \n";
-        cout << "0. Salir \n";
+        cout << "0. Volver al menu principal \n";
         std::cout << "Digita el numero: ";
         std::cin >> opcion;
 
@@ -57,6 +57,7 @@ void View::mostrarMenuAsistente()
         case 2:
             posgradosIngSoft.mostrarHistoricos();
             break;
+        }
 
     } while (opcion != 0);
 }
@@ -67,10 +68,10 @@ void View::mostrarMenuJurado()
     do
     {
 
-        cout << "Menu actas jurado\n";
+        cout << "\nMenu actas jurado\n";
         cout << "1. Evaluar trabajo de grado \n";
         cout << "2. Exportar acta \n";
-        cout << "0. Salir \n";
+        cout << "0. Volver al menu principal\n";
         std::cout << "Digita el numero: ";
         std::cin >> opcion;
 
@@ -78,12 +79,12 @@ void View::mostrarMenuJurado()
         {
 
         case 1:
-            posgradosIngSoft.evaluarTrabajo();
+            posgradosIngSoft.evaluarCriterios();
             break;
         case 2:
-            posgradosIngSoft.exportaraActa();
+            posgradosIngSoft.exportarActa();
             break;
-
+        }
     } while (opcion != 0);
 }
 
@@ -93,10 +94,10 @@ void View::mostrarMenuDirectora()
     do
     {
 
-        cout << "Menu actas asistente\n";
-        cout << "1. Crear acta \n";
+        cout << "\nMenu actas directora\n";
+        cout << "1. Modificar criterios \n";
         cout << "2. Ver historicos \n";
-        cout << "0. Salir \n";
+        cout << "0. Volver al menu principal \n";
         std::cout << "Digita el numero: ";
         std::cin >> opcion;
 
@@ -109,6 +110,7 @@ void View::mostrarMenuDirectora()
         case 2:
             posgradosIngSoft.mostrarHistoricos();
             break;
+        };
 
     } while (opcion != 0);
 }

@@ -1,0 +1,459 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Tue Sep 14 17:03:16 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/Gato/Desktop/u/Cuarto semestre/prog objetos/Proyecto
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+RABBITMQ_CONFIG_FILE = "C:\ProgramData\National Instruments\Skyline\RabbitMQ\rabbitmq"
+# environment
+ONEDRIVE = C:\Users\Gato\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+TMP = C:\Users\Gato\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-5924932c-b673-4405-83fb-276994519a6d-sock
+# environment
+VSCODE_CWD = C:\Users\Gato\AppData\Local\Programs\Microsoft VS Code
+# environment
+PATH = C:\Program Files\National Instruments\Shared\OpenVINO\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\MinGW\bin;C:\MinGW\bin\make.exe;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Git\cmd;C:\Users\Gato\AppData\Local\Microsoft\WindowsApps;;C:\Users\Gato\AppData\Local\Programs\Microsoft VS Code\bin
+# environment
+NIDAQMXSWITCHDIR = C:\Program Files (x86)\National Instruments\NI-DAQ\Switch\
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+VXIPNPPATH64 = C:\Program Files\IVI Foundation\VISA\
+# environment
+USERPROFILE = C:\Users\Gato
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# environment
+NIIVIPATH = C:\Program Files (x86)\IVI Foundation\IVI\
+# environment
+OV_NI_PLUGIN_DIR = C:\Program Files\National Instruments\ 
+Shared\OpenVINO\
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27000_KTTSRAUPZZXSUGUJ
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = LAPTOP-GUAP8PHD
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ASL.LOG = Destination=file
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+NIVERISTAND_ROOT = C:\VeriStand
+# environment
+USERNAME = Gato
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Gato\AppData\Roaming\Code\CachedData\83bd43bc519d15e50c4272c6cf5c1479df196a4d
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\LAPTOP-GUAP8PHD
+# environment
+ONEDRIVECONSUMER = C:\Users\Gato\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = LAPTOP-GUAP8PHD
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+XILINX = C:\NIFPGA\programs\Xilinx14_7\ISE
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := all
+# environment
+RABBITMQ_BASE = C:\ProgramData\RabbitMQ
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\Gato\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\093d5c97aca0db591b5f1455483017df-1.60.1-main-sock
+# environment
+HOMEPATH = \Users\Gato
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\Gato\AppData\Roaming
+# environment
+VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
+# environment
+TEMP = C:\Users\Gato\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# environment
+ERLANG_HOME = C:\Program Files\erl10.6
+# automatic
+<F = $(notdir $<)
+# environment
+OV_MO_INSTALL_PATH = C:\Users\Public\Documents\National Instruments\intel_model_optimizer\
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+NI_MO_INSTALL_PATH = C:\Users\Public\Documents\National Instruments\model_optimizer\
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 1801
+# default
+.INCLUDE_DIRS = C:/MinGW/include
+# default
+.RECIPEPREFIX := 
+# environment
+RABBITMQ_NODENAME = rabbit@localhost
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+VSCODE_PID = 27000
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-GUAP8PHD
+# variable set hash-table stats:
+# Load=105/1024=10%, Rehash=0, Collisions=14/127=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# : could not be stat'd.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1615364875): 30 files, no impossibilities.
+# . (key c:/Users/Gato/Desktop/u/Cuarto semestre/prog objetos/Proyecto, mtime 1631656780): 24 files, no impossibilities.
+# C:\Program Files (x86)\Dev-Cpp\MinGW64\bin (key C:/Program Files (x86)/Dev-Cpp/MinGW64/bin, mtime 1601480680): 63 files, no impossibilities.
+# C:\MinGW\bin\make.exe (key C:/MinGW/bin/make.exe, mtime 1346546548): could not be opened.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1628881378): 8 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1627943206): 130 files, no impossibilities.
+# C:\Program Files\National Instruments\Shared\OpenVINO\ (key C:/Program Files/National Instruments/Shared/OpenVINO/, mtime 1628628561): 13 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1631541681): 126 files, no impossibilities.
+# C:\Program Files\IVI Foundation\VISA\Win64\Bin\ (key C:/Program Files/IVI Foundation/VISA/Win64/Bin/, mtime 1628631292): 9 files, no impossibilities.
+# C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\ (key C:/Program Files (x86)/Microsoft SQL Server/110/DTS/Binn/, mtime 1628628423): 38 files, no impossibilities.
+# C:\Users\Gato\AppData\Local\Microsoft\WindowsApps (key C:/Users/Gato/AppData/Local/Microsoft/WindowsApps, mtime 1631151365): 18 files, no impossibilities.
+# C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI (key C:/Program Files (x86)/National Instruments/Shared/LabVIEW CLI, mtime 1628629845): 6 files, no impossibilities.
+# C:\Users\Gato\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Gato/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1631641486): 4 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1627256536): 154 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1631542058): 3116 files, no impossibilities.
+# C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\ (key C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/, mtime 1628632590): 11 files, no impossibilities.
+# C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\ (key C:/Program Files (x86)/Microsoft SQL Server/80/Tools/Binn/, mtime 1628628388): 34 files, no impossibilities.
+# C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin (key C:/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin, mtime 1628632590): 11 files, no impossibilities.
+# C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ (key C:/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn/, mtime 1628628412): 19 files, no impossibilities.
+
+# 3814 files, no impossibilities in 21 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+view: View.cpp View.h Archivo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 13):
+		g++ -c View.cpp
+
+# Not a target:
+Archivo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+DetalleCriterio.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-14 14:04:37
+#  File has been updated.
+#  Successfully updated.
+
+all: compilar
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+detalleCriterio: DetalleCriterio.cpp DetalleCriterio.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := detalleCriterio
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := DetalleCriterio.cpp DetalleCriterio.h
+# automatic
+# | := 
+# automatic
+# < := DetalleCriterio.cpp
+# automatic
+# ^ := DetalleCriterio.cpp DetalleCriterio.h
+# automatic
+# ? := DetalleCriterio.cpp DetalleCriterio.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'makefile', line 5):
+	g++ -c DetalleCriterio.cpp
+
+# Not a target:
+Archivo.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+criterio: Criterio.cpp Criterio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 7):
+		g++ -c Criterio.cpp
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-14 16:45:42
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+View.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Criterio.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+View.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Criterio.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+DetalleCriterio.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-14 14:04:04
+#  File has been updated.
+#  Successfully updated.
+
+acta: Acta.cpp Acta.h DetalleCriterio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 9):
+	g++ -c Acta.cpp
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 17):
+	@echo "Cleaning compilation..."
+	del *.o
+
+archivo: Archivo.cpp Archivo.h Criterio.h Acta.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 11):
+		g++ -c Archivo.cpp
+
+compilar: detalleCriterio criterio acta archivo view main
+#  Imp 
+licit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 3):
+		g++ -o Salida DetalleCriterio.o Criterio.o Acta.o Archivo.o View.o Main.o
+
+main: Main.cpp View.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 15):
+	  g++ -c Main.cpp
+
+# Not a target:
+Acta.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Acta.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=3/65=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 7 (6) / strings = 3736 / storage = 55797 B / avg = 14 B
+# current buf: size = 8174 B / used = 6807 B / count = 410 / avg = 16 B
+# other used: total = 47623 B / count = 3326 / avg = 14 B
+# other free: total = 54 B / max = 12 B / min = 5 B / avg = 9 B
+
+# strcache performance: lookups = 3883 / hit rate = 3%
+# hash-table stats:
+# Load=3736/8192=46%, Rehash=0, Collisions=1423/3883=37%
+# Finished Make data base on Tue Sep 14 17:03:16 2021
+
+ 

@@ -1,0 +1,11 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/Gato/Desktop/u/Cuarto semestre/prog objetos/Proyecto'
+g++ -c DetalleCriterio.cpp
+g++ -c Criterio.cpp
+g++ -c Acta.cpp
+g++ -c Archivo.cpp
+g++ -c View.cpp
+g++ -c Main.cpp
+g++ -o Salida DetalleCriterio.o Criterio.o Acta.o Archivo.o View.o Main.o
+make.exe: Leaving directory 'c:/Users/Gato/Desktop/u/Cuarto semestre/prog objetos/Proyecto'
+ 

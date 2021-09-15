@@ -4,17 +4,23 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
+#include <vector>
+#include "DetalleCriterio.h"
 
 using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
+using std::vector;
 
 class Acta
 {
 private:
 // lista de criterios
+    
     int numActa;
+    float notaFinal;
+    float pesoPorcentual;
     string fecha;
     string autor;
     string nombreTrabajo;
@@ -22,13 +28,16 @@ private:
     string director;
     string jurado1;
     string jurado2;
+    vector<DetalleCriterio> evaluaciones;
+    string aprobado;
+    string observaciones;
 
 public:
     Acta();
-    Acta(string autor,string nombreTrabajo, string tipoTrabajo, string director, string jurado1, string jurado2, string fecha, string numActa);
+    Acta(string aprobado, string observaciones, string autor,string nombreTrabajo, string tipoTrabajo, string director, string jurado1, string jurado2, string fecha, int numActa);
     string getAutor();
     void setAutor(string autor);
-    string getnombreTrabajo();
+    string getNombreTrabajo();
     void setNombreTrabajo(string nombreTrabajo);
     string getTipoTrabajo();
     void setTipoTrabajo(string tipoTrabajo);
@@ -42,7 +51,16 @@ public:
     void setNumActa(int numActa);
     string getFecha();
     void setFecha(string fecha);
-    mostrarActa();
+    void mostrarActa();
+    void agregarEvaluacion(DetalleCriterio evaluacion);
+    void setNotaFinal(float notaFinal);
+    void setPesoPorcentual(float pesoPorcentual);
+    void mostrarDetallesActa();
+    float getNotaFinal();
+    string getAprobado();
+    string getObservaciones();
+    void setAprobado(string aprobado);
+    void setObservaciones(string observaciones);
     
 };
 

@@ -5,16 +5,11 @@
 Criterio::Criterio()
 {}
 
-Criterio::Criterio(int id, string texto, int porcentaje)
+Criterio::Criterio(int id, string texto, float porcentaje)
 {
     this->id = id;
     this->texto = texto;
     this->porcentaje = porcentaje;   
-}
-
-void Criterio::agregarDetalleCriterio(DetalleCriterio detalle)
-{//crear vector detalles
-    detalles.push_back(detalle)
 }
 
 int Criterio::getId()
@@ -49,7 +44,7 @@ void Criterio::setPorcentaje(int porcentaje)
 
 void Criterio::mostrarCriterio()
 {
-    cout << "id " << this->id;
-    cout << "texto " << this->texto;
-    cout << "porcentaje " << this->porcentaje;
+    cout << "id " << this->id << "\n";
+    cout << "texto " << this->texto << "\n";
+    cout << "porcentaje " << this->porcentaje << "\n\n";
 }

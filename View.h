@@ -20,7 +20,7 @@ class View
 
     public:
     View();
-    void mostrarMenuUsuario();
+    void mostrarMenuCargoUsuario();
 
 };
 #endif

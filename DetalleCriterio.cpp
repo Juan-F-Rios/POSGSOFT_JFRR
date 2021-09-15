@@ -1,9 +1,11 @@
 #include <iostream>
+#include "DetalleCriterio.h"
 #include "Criterio.h"
 
 
-DetalleCriterio::DetalleCriterio()
+DetalleCriterio::DetalleCriterio(Criterio criterio, int nota, int valorPorcentual)
 {
+    this->criterio = criterio;
     this->nota = nota;
     this->valorPorcentual = valorPorcentual;
 }
@@ -16,15 +18,15 @@ void DetalleCriterio::mostrarDetalleCriterio()
 
 void DetalleCriterio::mostrarCriterioActa()
 {
-    cout << acta.getActa() << "\t" << nota << "\t" << valorPorcentual << "\n";
+    cout << "criterio " << criterio.getId() << "\t" << nota << "\t" << valorPorcentual << "\n";
 }
 
-Acta DetalleCriterio::getActa()
+Criterio DetalleCriterio::getCriterio()
 {
-    return this->acta;
+    return this->criterio;
 }
 
-float DetalleCriterio::getNota()
+int DetalleCriterio::getNota()
 {
     return nota;
 }
