@@ -16,11 +16,10 @@ using std::vector;
 class Acta
 {
 private:
-// lista de criterios
-    
+ 
     int numActa;
-    float notaFinal;
-    float pesoPorcentual;
+    double notaFinal;
+    double pesoPorcentual;
     string fecha;
     string autor;
     string nombreTrabajo;
@@ -53,10 +52,10 @@ public:
     void setFecha(string fecha);
     void mostrarActa();
     void agregarEvaluacion(DetalleCriterio evaluacion);
-    void setNotaFinal(float notaFinal);
-    void setPesoPorcentual(float pesoPorcentual);
+    void setNotaFinal(double notaFinal);
+    void setPesoPorcentual(double pesoPorcentual);
     void mostrarDetallesActa();
-    float getNotaFinal();
+    double getNotaFinal();
     string getAprobado();
     string getObservaciones();
     void setAprobado(string aprobado);

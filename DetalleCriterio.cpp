@@ -3,7 +3,7 @@
 #include "Criterio.h"
 
 
-DetalleCriterio::DetalleCriterio(Criterio criterio, int nota, int valorPorcentual)
+DetalleCriterio::DetalleCriterio(Criterio criterio, double nota, double valorPorcentual)
 {
     this->criterio = criterio;
     this->nota = nota;
@@ -26,22 +26,22 @@ Criterio DetalleCriterio::getCriterio()
     return this->criterio;
 }
 
-int DetalleCriterio::getNota()
+double DetalleCriterio::getNota()
 {
     return nota;
 }
 
-void DetalleCriterio::setNota(float nota)
+void DetalleCriterio::setNota(double nota)
 {
     this->nota = nota;
 }
 
-float DetalleCriterio::getValorPorcentual()
+double DetalleCriterio::getValorPorcentual()
 {
     return valorPorcentual;
 }
 
-void DetalleCriterio::setValorPorcentual(float valorPorcentual)
+void DetalleCriterio::setValorPorcentual(double valorPorcentual)
 {
     this->valorPorcentual = valorPorcentual;
 }

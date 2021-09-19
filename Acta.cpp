@@ -42,17 +42,17 @@ void Acta::setObservaciones(string observaciones)
 {
 	this->observaciones = observaciones;
 }
-float Acta::getNotaFinal()
+double Acta::getNotaFinal()
 {
 	return this->notaFinal;
 }
 
-void Acta::setNotaFinal(float notaFinal)
+void Acta::setNotaFinal(double notaFinal)
 {
 	this->notaFinal = notaFinal;
 }
 
-void Acta::setPesoPorcentual(float pesoPorcentual)
+void Acta::setPesoPorcentual(double pesoPorcentual)
 {
 	this->pesoPorcentual = pesoPorcentual;
 }

@@ -26,7 +26,7 @@ private:
     int numActa;
     int numCriterio;
     int cantCriterio;
-    float porcentajeInicial();
+    double porcentajeInicial();
     map<int,Acta> listaActas;
     map<int,Criterio> listaCriterios;
 
@@ -40,7 +40,7 @@ public:
     bool existeActaId(int numActa);
     void evaluarCriterios();
     void mostrarActaElegida(int numActaElegida);
-    void agregarNota(float &notaFinal, float &pesoPorcentual, Acta &acta, int numActaEvaluar);
+    void agregarNota(double &notaFinal, double &pesoPorcentual, Acta &acta, int numActaEvaluar);
     void mostrarHistoricos();
     void exportarActa();
     void mostrarCriterios();

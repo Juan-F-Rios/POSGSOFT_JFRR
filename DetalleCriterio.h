@@ -15,16 +15,16 @@ class DetalleCriterio
 {
 private:
     Criterio criterio;
-    float nota;
-    float valorPorcentual;
+    double nota;
+    double valorPorcentual;
 
 public:
-    DetalleCriterio(Criterio criterio, int nota, int valorPorcentual);
+    DetalleCriterio(Criterio criterio, double nota, double valorPorcentual);
     Criterio getCriterio();
-    int getNota();
-    void setNota(float nota);
-    float getValorPorcentual();
-    void setValorPorcentual(float valorPorcentual);
+    double getNota();
+    void setNota(double nota);
+    double getValorPorcentual();
+    void setValorPorcentual(double valorPorcentual);
     void mostrarCriterioActa();
     void mostrarDetalleCriterio();
 };

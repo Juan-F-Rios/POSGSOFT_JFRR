@@ -15,17 +15,17 @@ class Criterio
 private:
     int id;
     string texto;
-    float porcentaje;
+    double porcentaje;
 
 public:
     Criterio();
-    Criterio(int id, string texto, float porcentaje);
+    Criterio(int id, string texto, double porcentaje);
     int getId();
     void setId(int id);
     string getTexto();
     void setTexto(string texto);
-    int getPorcentaje();
-    void setPorcentaje(int porcentaje);
+    double getPorcentaje();
+    void setPorcentaje(double porcentaje);
     void mostrarCriterio();
     
 };

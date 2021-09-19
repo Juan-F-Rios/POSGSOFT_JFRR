@@ -5,7 +5,7 @@
 Criterio::Criterio()
 {}
 
-Criterio::Criterio(int id, string texto, float porcentaje)
+Criterio::Criterio(int id, string texto, double porcentaje)
 {
     this->id = id;
     this->texto = texto;
@@ -32,12 +32,12 @@ void Criterio::setTexto(string texto)
     this->texto = texto;
 }
 
-int Criterio::getPorcentaje()
+double Criterio::getPorcentaje()
 {
     return porcentaje;
 }
 
-void Criterio::setPorcentaje(int porcentaje)
+void Criterio::setPorcentaje(double porcentaje)
 {
     this->porcentaje = porcentaje;
 }

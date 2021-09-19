@@ -4,13 +4,13 @@ using namespace std;
 
 
 Archivo::Archivo()
-{
+{ //constructor
     Criterio criterioTemp;
     int numCriterio;
-    float porcentajeInicial = 12.5;
+    double porcentajeInicial = 12.5;
     this->nombre = "Archivo posgrados en ingeniería de software";
 	this->numActa = 1;
-    int cantCriterio = 8;
+    this->cantCriterio = 8;
     for(numCriterio = 1; numCriterio <= cantCriterio; numCriterio++)
     {
         criterioTemp.setId(numCriterio);
@@ -98,7 +98,7 @@ void Archivo::crearActa()
 }
 
 void Archivo::mostrarActaElegida(int numActaElegida)
-{ 
+{
     for (map<int, Acta>::iterator pActa = listaActas.begin();
 		 pActa != listaActas.end(); pActa++)
 	{
@@ -133,11 +133,11 @@ void Archivo::mostrarCriterios()
 void Archivo::crearCriterios()
 {
     int id;
-    int cantCriterio = 8;
+    //int cantCriterio = 8;
     string texto;
     int porcentaje;
 
-    for( id == 1; id <= cantCriterio; id++)
+    for( id = 1; id <= cantCriterio; id++)
     {
         cout << "Ingrese la descripción del criterio  " << id << ": ";
         getline(cin, texto);
@@ -184,31 +184,33 @@ void Archivo::modificarCriterios()
 
 }
 
-void Archivo::agregarNota(float &notaFinal, float &pesoPorcentual, Acta &Acta, int numActaEvaluar)
+void Archivo::agregarNota(double &notaFinal, double &pesoPorcentual, Acta &Acta, int numActaEvaluar)
 {
     Criterio criterioTemp;
-    int numCriterio, cantCriterio = 8, notaMin = 0, notaMax = 5;
-    float valorPorcentual, nota, notaJurado1 = -1, notaJurado2 = -1;
+    int numCriterio, notaMin = 0, notaMax = 5;
+    //cantCriterio = 8
+    double valorPorcentual, nota, notaJurado1 = -1.0, notaJurado2 = -1;
 
     for(numCriterio = 1; numCriterio <= cantCriterio; numCriterio++)
-    {
+    {//ciclo for para evaluar cada criterio
         criterioTemp = this->listaCriterios[numCriterio];
         Criterio criterioTemp = this->listaCriterios[numCriterio];
         cout << "Criterio: " << numCriterio << "\n";
         criterioTemp.mostrarCriterio();
+        //do while para recibir notas mayores o iguales a 0 y menores o iguales a 5
         do
         {
             cout << "Ingrese la nota del criterio " << numCriterio << " del jurado 1: ";
             cin >> notaJurado1;
 
-        } while (notaJurado1 >= notaMin && notaJurado1 <= notaMax);
+        } while (notaJurado1 < notaMin || notaJurado1 > notaMax );
 
         do
         {
             cout << "Ingrese la nota del criterio " << numCriterio << " del jurado 2: ";
             cin >> notaJurado2;
 
-        } while (notaJurado2 >= notaMin && notaJurado2 <= notaMax);
+        } while (notaJurado2 < notaMin || notaJurado2 > notaMax);
         
 
 
@@ -219,7 +221,7 @@ void Archivo::agregarNota(float &notaFinal, float &pesoPorcentual, Acta &Acta, i
         DetalleCriterio notas(criterioTemp, nota, valorPorcentual);
 
 
-        notaFinal += nota;
+        notaFinal += valorPorcentual;
         pesoPorcentual += valorPorcentual;
 
         listaActas[numActaEvaluar].agregarEvaluacion(notas);   
@@ -230,9 +232,10 @@ void Archivo::agregarNota(float &notaFinal, float &pesoPorcentual, Acta &Acta, i
 void Archivo::evaluarCriterios()
 {
     
-    float notaFinal = 0.0, pesoPorcentual = 0.0;
-    int numActaEvaluar, cantCriterio = 8;
-    float aprobar = 3.5;
+    double notaFinal = 0.0, pesoPorcentual = 0.0;
+    int numActaEvaluar;
+    //cantCriterio = 8;
+    double aprobar = 3.5;
     Acta acta;
     string observaciones;
     
@@ -244,8 +247,7 @@ void Archivo::evaluarCriterios()
     }while(!existeActaId(numActaEvaluar));
 
     agregarNota(notaFinal, pesoPorcentual, acta, numActaEvaluar);
-
-    notaFinal = notaFinal/cantCriterio;    
+  
     
     listaActas[numActaEvaluar].setNotaFinal(notaFinal);
     listaActas[numActaEvaluar].setPesoPorcentual(pesoPorcentual);
@@ -273,7 +275,7 @@ void Archivo::exportarActa()
 {
     ofstream myfile;
     int numeroActaExpo;
-    int cantCriterio = 8;
+    //int cantCriterio = 8;
 
     cout << "Ingrese el numero de acta a exportar: ";
     cin >> numeroActaExpo;

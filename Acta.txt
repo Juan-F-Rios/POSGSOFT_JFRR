@@ -6,13 +6,13 @@ Tipo de trabajo Aplicado
 Director 1
 Jurado1 1 Jurado 21
 
-Nota final 5.8125
+Nota final 3.8125
 Criterios 
-Id: 1 Descripcion: texto Porcentaje: 12Criterios 
-Id: 2 Descripcion: texto Porcentaje: 12Criterios 
-Id: 3 Descripcion: texto Porcentaje: 12Criterios 
-Id: 4 Descripcion: texto Porcentaje: 12Criterios 
-Id: 5 Descripcion: texto Porcentaje: 12Criterios 
-Id: 6 Descripcion: texto Porcentaje: 12Criterios 
-Id: 7 Descripcion: texto Porcentaje: 12Criterios 
-Id: 8 Descripcion: texto Porcentaje: 12El trabajo fue: Aprobado El jurado hace las siguientes observaciones: 6
+Id: 1 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 2 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 3 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 4 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 5 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 6 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 7 Descripcion: texto Porcentaje: 12.5Criterios 
+Id: 8 Descripcion: texto Porcentaje: 12.5El trabajo fue: Aprobado El jurado hace las siguientes observaciones: ww
